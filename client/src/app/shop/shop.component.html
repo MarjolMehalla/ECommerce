@@ -45,7 +45,7 @@
           [totalCount]="this.totalCount"></app-page-header>
         <div class="form-inline mt-2">
           <label>
-            <input (click)="onSearch()" class="form-control mr-2"  #search style="width: 300px;" placeholder="Search" type="text">
+            <input (keyup.enter)="onSearch()" class="form-control mr-2"  #search style="width: 300px;" placeholder="Search" type="text">
           </label>
           <button class="btn btn-outline-primary my-2" (click)="onSearch()">Search</button>
           <button class="btn btn-outline-success ml-2 my-2" (click)="onReset()">Reset</button>
